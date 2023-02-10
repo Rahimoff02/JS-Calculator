@@ -1,0 +1,63 @@
+<h2>Kalkulyator</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Rahimoff</title>
+</head>
+
+<body>
+
+    <form name="kalk">
+        <div class="container">
+            <div class="calc-body">
+                <div class="calc-screen">
+                    <input type="text" name="ekran" id="d">
+                </div>
+                <input type="button" class="button d" value="AC" onclick="kalk.ekran.value = ''">
+                <input type="button" class="button d" value="C" onclick="backSpace()">
+                <input type="button" class="button d" value="%" onclick="kalk.ekran.value += '%'">
+                <input type="button" class="button l" value="/" onclick="kalk.ekran.value += '/'">
+
+                <input type="button" value="1" onclick="kalk.ekran.value += 1">
+                <input type="button" value="2" onclick="kalk.ekran.value += 2">
+                <input type="button" value="3" onclick="kalk.ekran.value += 3">
+                <input type="button" class="button l" value="+" onclick="kalk.ekran.value += '+'">
+
+                <input type="button" value="4" onclick="kalk.ekran.value += 4">
+                <input type="button" value="5" onclick="kalk.ekran.value += 5">
+                <input type="button" value="6" onclick="kalk.ekran.value += 6">
+                <input type="button" class="button l" value="-" onclick="kalk.ekran.value += '-'">
+
+                <input type="button" value="7" onclick="kalk.ekran.value += 7">
+                <input type="button" value="8" onclick="kalk.ekran.value += 8">
+                <input type="button" value="9" onclick="kalk.ekran.value += 9">
+                <input type="button" class="button l" value="x" onclick="kalk.ekran.value += '*'">
+
+                <input type="button" class="button b" value="0" onclick="kalk.ekran.value += 0">
+                <input type="button" value="." onclick="kalk.ekran.value += '.'">
+                <input type="button" class="button l" value="=" onclick="kalk.ekran.value = eval(kalk.ekran.value)">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+<script>
+    function backSpace() {
+        let d = document.getElementById("d").value;
+        document.getElementById("d").value = d.substring(0, d.length - 1);
+    }
+
+   function percentage() {
+    let d = document.getElementById("d").value;
+    document.getElementById("d").value = (100 *dq ) / eq;
+    
+} 
+
+</script>
+
